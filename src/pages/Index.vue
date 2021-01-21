@@ -32,7 +32,7 @@
                 <q-checkbox
                   v-model="model"
                   :label="opt.value"
-                  :val="opt.value"
+                  :val="opt"
                 />
             </q-item-section>
           </q-item>
@@ -52,6 +52,14 @@ const options = [
   {
     value: 'Платформа',
     id: 2
+  },
+  {
+    value: 'Рефрежиратор',
+    id: 3
+  },
+  {
+    value: 'Автовоз',
+    id: 4
   }
 ]
 
