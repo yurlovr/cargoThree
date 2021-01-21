@@ -65,16 +65,18 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '../css/quasar.variables';
+
 .select {
   margin-bottom: 30px;
-  color: #777D81;
+  color: $lightGrey;
   & .q-select__dropdown-icon {
     font-size: 27px;
     font-weight: bold;
-    color: #142A42;
+    color: $text;
   }
   & .q-field__control {
-    color: #777D81;
+    color: $lightGrey;
   }
   &.q-field--float .q-field__label {
     transform: none;
@@ -82,25 +84,25 @@ export default {
 }
 .item {
   font-size: 14px;
-  color: #777D81;
+  color: $lightGrey;
   & .q-checkbox__inner {
       & .q-checkbox__bg {
-        border-color: rgba(54, 78, 103, 1);
+        border-color: $text
       }
   }
   & .q-checkbox__inner--truthy {
     & .q-checkbox__bg {
-        border-color: #FF6000;
+        border-color: $primary;
       }
   }
 }
 
 .focused {
-  border-color: #FF6000;
+  border-color: $primary;
 }
 
 .text-selected {
   font-size: 14px;
-  color: #142A42;
+  color: $text;
 }
 </style>
